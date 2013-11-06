@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#quien pondria un eastern egg en un script para compilar imagenes para una presentacion? o__O 
+#anyway! este es un script bash que puedes usar para convertir (recursivamente) todas las imagenes que esten dentro del directorio en el que lo ejecutes, de un formato svg (vectorial) a uno png. proffit! · w ·
+
+find . -type f -name '*.svg' |
+while read filename; do
+    name="${filename%.*}"
+    convert "${filename}" "${name}.png"
+done
