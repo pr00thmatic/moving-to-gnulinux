@@ -3,9 +3,13 @@ Hola! esta es una presentacion que hice para la semana del gnu y del pinguino, o
 Esta hecha en LaTeX, pueden compilar el .tex que se encuentra en la carpeta texfiles/ asi:
 
 $ cd img/
+
 $ ./svg2png #convertir las imagenes de svg a png utilizando la opcion 'convert' del ImageMagick
+
 $ cd ..
+
 $ pdflatex /texfiles/gnutux.tex
+
 
 Generara algunos errores que necesito corregir. Pero se arreglara con presionar la tecla enter cada vez que la compilacion se pause. (prometo corregir estos errores en cuanto tenga tiempo n.n') 
 Esto generara un archivo pdf que podras abrir con Evince o con el visor de documentos que prefieras · w ·
