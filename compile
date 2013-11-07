@@ -1,0 +1,25 @@
+#!/bin/bash
+
+cd img
+
+
+if [ "$1" != "-ni" ]
+then
+    echo "convirtiendo las imagenes vectoriales, en imagenes png, esto puede demorar un poco..."
+    echo "-> Esta operación solo deberia realizarse en la primera compilacion, o cuando se hayan modificado las imagenes svg, para omitir (y ahorrar tiempo), usa '-ni'" 
+    ./svg2png
+fi
+
+cd ../texfiles/
+echo "generando el archivo pdf..."
+pdflatex -interaction=batchmode gnutux.tex
+pdflatex -interaction=batchmode gnutux.tex #compilando dos veces porque, cuando se compila por primera vez, no se genera el esquema o__O
+
+echo "visualizando la presentación con Evince..."
+evince gnutux.pdf &
+
+if [ $? -ne 0 ]
+then
+    echo "No tienes instalado Evince. Para ver la presentacion, abre el archivo gnutux.pdf en la carpeta texfiles"
+fi
+echo "listo!"

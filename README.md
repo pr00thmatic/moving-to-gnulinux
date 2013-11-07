@@ -1,18 +1,16 @@
 Hola! esta es una presentacion que hice para la semana del gnu y del pinguino, organizada por la Sociedad Cientifica de la Carrera de Informatica de la Universidad Mayor de San Andres en Bolivia :)
 
-Esta hecha en LaTeX, pueden compilar el .tex que se encuentra en la carpeta texfiles/ asi:
+Esta hecha en LaTeX, pueden compilar la presentacion, ejecutando el archivo 'compile' de esta forma:
 
-$ cd img/
+$ ./compile
 
-$ ./svg2png #convertir las imagenes de svg a png utilizando la opcion 'convert' del ImageMagick
+Si no tienes el programa Evince, para ver archivos pdf, tendras que abrirlo de forma manual, visualizando con tu visor de documentos preferido el archivo gnutux.pdf que se encuentra en la carpeta texfiles...
 
-$ cd ..
+El script tardara un poco, porque tiene que convertir las imagenes svg a png, esto solo tiene que hacerse la primera vez! una vez que tengas las imagenes en png, puedes correr el script utilizando el argumento '-ni' (no imagenes), asi:
 
-$ pdflatex /texfiles/gnutux.tex
+$ ./compile -ni
 
-
-Generara algunos errores que necesito corregir. Pero se arreglara con presionar la tecla enter cada vez que la compilacion se pause. (prometo corregir estos errores en cuanto tenga tiempo n.n') 
-Esto generara un archivo pdf que podras abrir con Evince o con el visor de documentos que prefieras · w ·
+Gracias a Alejandro Salamanaca Mazuelo por corregir los bugs del documento, y por añadir el inputenc y el babel! :D
 
 Sientete libre de revisar y modificar el codigo fuente con tu editor de texto favorito, y de usar la presentacion como quieras :D
 

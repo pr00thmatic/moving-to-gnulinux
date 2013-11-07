@@ -1,4 +1,6 @@
 \documentclass[xcolor=dvipsnames, pdf]{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage{graphics}
 \usepackage{listings}
 \mode<presentation>{}
@@ -8,8 +10,8 @@
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{items}[circle]
 
-\title[Migrando a GNU/Linux]{¿Como migrar a GNU/Linux y no morir en el intento}
-\author[VengadoraVG]{Ruth Garc\'ia}
+\title[Migrando a GNU/Linux]{¿Cómo migrar a GNU/Linux y no morir en el intento?}
+\author[VengadoraVG]{Ruth García}
 \date[Noviemebre, 2013]{11 de noviembre de 2013}
 
 \AtBeginSubsection[]
@@ -32,10 +34,10 @@
 \end{section}
 
 \begin{section}
-  {Quiero?}
+  {¿Quiero?}
   
   \begin{subsection}
-    {No es solo un Sistema Operativo m\'{a}s. Implica...}
+    {No es sólo un Sistema Operativo más. Implica...}
     \begin{frame}
       {Libertad}
       \includegraphics[width=10cm]{../img/libertad.png}
@@ -52,7 +54,7 @@
     \end{frame}
     
     \begin{frame}
-      {Cooperaci\'on}
+      {Cooperación}
       \includegraphics[width=10cm]{../img/cooperacion.png}
     \end{frame}
   \end{subsection}
@@ -61,7 +63,7 @@
     \vfill
     NO SE TRATA DEL SOFTWARE...  
     \begin{center} SE TRATA DE LAS PERSONAS... \end{center}
-    \hfill DE COMPARTIR!
+    \hfill ¡DE COMPARTIR!
     \vfill
   \end{frame}
   
@@ -87,18 +89,18 @@
 
 
 \begin{section}
-  {Puedo?}
+  {¿Puedo?}
   
   \begin{subsection}
     {Actitud}
     
     \begin{frame}
-      {Determinaci\'{o}n}
-      \begin{center}puedo? == tengo la ACTITUD necesaria?\end{center}
+      {Determinación}
+      \begin{center}¿puedo? == ¿tengo la ACTITUD necesaria?\end{center}
     \end{frame}
 
     \begin{frame}
-      {Disposici\'{o}n...}
+      {Disposición...}
       
       \begin{itemize}
       \item<2,5> de TIEMPO para...          
@@ -117,7 +119,7 @@
       \item<4,5> y de un poquito de FE en el Software Libre, porque...
 
         \begin{itemize}
-        \item<4,5> todo es posible: ES LIBRE!
+        \item<4,5> todo es posible: ¡ES LIBRE!
         \end{itemize}
       \end{itemize}
     \end{frame}
@@ -126,7 +128,7 @@
 
 
 \begin{section}
-  {Quiero y puedo!}
+  {¡Quiero y puedo!}
   
   \begin{subsection}
     {¡Antes de purgar!}
@@ -138,15 +140,15 @@
         
         \begin{itemize}
         \item drivers problematicos
-        \item LA TARJETA DE VIDEO!
+        \item ¡LA TARJETA DE VIDEO!
         \item personas con tu mismo hardware usando GNU/Linux
         \end{itemize}
       \end{itemize}
-      404?          
+      ¿404?          
       \begin{itemize}
-      \item \textbf{Comparte tu experiencia!}
+      \item \textbf{¡Comparte tu experiencia!}
       \end{itemize}
-
+      
     \end{frame}
     
     \begin{frame}        
@@ -160,7 +162,6 @@
       \end{center}
     \end{frame}
     
-
     \begin{frame}
       {Debian releases...}
       
@@ -168,28 +169,27 @@
         \includegraphics[width=3cm]{../img/debrelease/squeeze.jpg}
         \\*Debian ``squeeze'' \\*oldstable
       \end{figure}
-
+      
     \end{frame}
-
     
     \begin{frame}
       {Debian releases...}
-
+      
       \begin{figure}
         \includegraphics[width=3cm]{../img/debrelease/jessie.jpg}
         \\*Debian ``Jessie'' \\*testing
       \end{figure}
-
+      
     \end{frame}
-
+    
     \begin{frame}
       {Debian releases...}
-
+      
       \begin{figure}
         \includegraphics[width=3cm]{../img/debrelease/sid.jpg}
         \\*Debian ``Sid'' \\*unstable
       \end{figure}
-
+      
     \end{frame}
     
     \begin{frame}
@@ -199,105 +199,102 @@
         \includegraphics[width=8cm]{../img/distros-map/redhat_distro-map.png} 
       \end{center}
     \end{frame}
-
-    \begin{subsection}
-      {Instalando aplicaciones}
-      
-      \begin{frame}
-        {es f\'{a}cil con aptitude!}
-        
-        \begin{itemize}
-        \item \texttt{\#{} apt-get install nombre-de-la-aplicacion}
-        \item Synaptic
-        \end{itemize}
-      \end{frame}
-      
-
-      \begin{frame}
-        {Pero sin aptitude...}
-        
-        Tambi\'{e}n es f\'{a}cil XD
-        
-        \begin{itemize}
-        \item Sigue el tutorial de instalaci\'{o}n
-        \item Si algun paso da un error: investiga \alert{(pero no procedas)}
-        \item Si no entiendes: pregunta
-        \item y si entiendes: Arregla y \textbf{comparte}
-        \end{itemize}
-        \pause
-        y eso aplica para: \color[rgb]{0.8,0.3,0.3} DRIVERS,
-        \color[rgb]{0.3,0.8,0.3} APLICACIONES, 
-        \color[rgb]{0.3,0.3,0.8} y, pr\'{a}cticamente todo lo dem\'{a}s :D
-      \end{frame}
-
-      \begin{frame}
-        {Ejecutando un .exe}
-        \begin{center}
-          \scalebox{-1}[1]{\includegraphics[width=4cm]{../img/WINE-Logo.png}}
-        \end{center}
-      \end{frame}
-    \end{subsection}
-
-
-    \begin{subsection}
-      {y qu\'{e} hay para los devs?}
-      
-      \begin{frame}
-        {Editores de Texto alucinantes \texttt{*u*}}
-        como...
-        \begin{itemize}
-        \item emacs: elisp lo hace poderosamente extensible
-        \item vim: sus hotkeys son cortitos :3 
-        \item ...
-        \end{itemize}
-      \end{frame}
-
-
-      \begin{frame}
-        {Compatibilidad con Git}
-
-        \begin{itemize}
-        \item Desde la consola
-        \item Instalable desde los repositorios
-        \item Offline
-        \item Online (como Github)
-        \end{itemize}
-      \end{frame}
-      
-      
-      \begin{frame}
-        {Repositorio de aplicaciones LIBRES}
-        \begin{itemize}
-        \item Juegos
-        \item IDEs
-        \item Cosas raras
-        \item ...
-        \end{itemize}  
-      \end{frame}
-      
-      \begin{frame}
-        {es LIBRE}
-        
-        \begin{itemize}
-        \item podemos \alert{aprender} de su codigo fuente
-        \item podemos \alert{modificar} su codigo fuente
-        \item y podemos \alert{compartirlo y contribuir}
-        \end{itemize}
-      \end{frame}
-      
-    \end{subsection}
-  \end{section}
+  \end{subsection}
   
-  \begin{section}
-    {}
-    \begin{frame}[clean]
-      {GRACIAS :D}
+  \begin{subsection}
+    {Instalando aplicaciones}
+    
+    \begin{frame}
+      {¡es fácil con aptitude!}
+      
+      \begin{itemize}
+      \item \texttt{\#{} apt-get install nombre-de-la-aplicacion}
+      \item Synaptic
+      \end{itemize}
+    \end{frame}
+    
+    \begin{frame}
+      {Pero sin aptitude...}
+      
+      También es fácil XD
+      
+      \begin{itemize}
+      \item Sigue el tutorial de instalación
+      \item Si algun paso da un error: investiga \alert{(pero no procedas)}
+      \item Si no entiendes: pregunta
+      \item y si entiendes: Arregla y \textbf{comparte}
+      \end{itemize}
+      \pause
+      y eso aplica para: \color[rgb]{0.8,0.3,0.3} DRIVERS,
+      \color[rgb]{0.3,0.8,0.3} APLICACIONES, 
+      \color[rgb]{0.3,0.3,0.8} y, prácticamente todo lo demás :D
+    \end{frame}
+    
+    \begin{frame}
+      {Ejecutando un .exe}
       \begin{center}
-        \includegraphics[width=4cm]{../img/tux_bye.png}
-        \hfill \includegraphics[width=4cm]{../img/gnu_bye.png}
-        \\Todo el contenido de esta presentaci\'on (excepto, talvez, por los
- personajes de Toy Story) es completamente libre \^{} w \^{}
+        \scalebox{-1}[1]{\includegraphics[width=4cm]{../img/WINE-Logo.png}}
       \end{center}
-    \end{frame}    
-  \end{section}
+    \end{frame}
+  \end{subsection}
+  
+  \begin{subsection}
+    {¿y qué hay para los devs?}
+    
+    \begin{frame}
+      {Editores de Texto alucinantes \texttt{*u*}}
+      como...
+      \begin{itemize}
+      \item emacs: elisp lo hace poderosamente extensible
+      \item vim: sus hotkeys son cortitos :3 
+      \item ...
+      \end{itemize}
+    \end{frame}
+    
+    \begin{frame}
+      {Compatibilidad con Git}
+      
+      \begin{itemize}
+      \item Desde la consola
+      \item Instalable desde los repositorios
+      \item Offline
+      \item Online (como Github)
+      \end{itemize}
+    \end{frame}
+    
+    \begin{frame}
+      {Repositorio de aplicaciones LIBRES}
+      \begin{itemize}
+      \item Juegos
+      \item IDEs
+      \item Cosas raras
+      \item ...
+      \end{itemize}  
+    \end{frame}
+    
+    \begin{frame}
+      {es LIBRE}
+      
+      \begin{itemize}
+      \item podemos \alert{aprender} de su código fuente
+      \item podemos \alert{modificar} su código fuente
+      \item y podemos \alert{compartirlo y contribuir}
+      \end{itemize}
+    \end{frame}
+    
+  \end{subsection}
+\end{section}
+
+\begin{section}
+  {}
+  \begin{frame}[clean]
+    {GRACIAS :D}
+    \begin{center}
+      \includegraphics[width=4cm]{../img/tux_bye.png}
+      \hfill \includegraphics[width=4cm]{../img/gnu_bye.png}
+      \\Todo el contenido de esta presentación (excepto, talvez, por los
+      personajes de Toy Story) es completamente libre \^{} w \^{}
+    \end{center}
+  \end{frame}    
+\end{section}
 \end{document}
